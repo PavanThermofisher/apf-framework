@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - APF Framework</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-card p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        
+        .services-list {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+        
+        .services-list h3 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .service-item {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .service-item h4 {
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-item p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>APF Framework</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p class="hero-description">Connect for consulting, speaking engagements, or collaboration opportunities</p>
+        </div>
+    </header>
+
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                
+                <div class="contact-options">
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect for professional networking and thought leadership content</p>
+                        <a href="https://www.linkedin.com/in/pavan-srinivas-dontaraju/" target="_blank" class="btn btn-primary">Connect on LinkedIn</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p>For consulting inquiries, speaking engagements, or general questions</p>
+                        <a href="mailto:dpavansrinivas@gmail.com" class="btn btn-primary">Send Email</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>Collaboration</h3>
+                        <p>Interested in research partnerships or case study opportunities</p>
+                        <a href="mailto:dpavansrinivas@gmail.com?subject=APF Framework Collaboration" class="btn btn-primary">Discuss Collaboration</a>
+                    </div>
+                </div>
+
+                <div class="services-list">
+                    <h3>Consulting & Advisory Services</h3>
+                    <p style="text-align: center; color: #666; margin-bottom: 2rem;">Expert guidance for implementing the APF Framework in your organization</p>
+                    
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <h4>🎯 Strategic Assessment</h4>
+                            <p>Evaluate your current AI landscape and develop a roadmap for APF implementation</p>
+                        </div>
+
+                        <div class="service-item">
+                            <h4>🏗️ Framework Implementation</h4>
+                            <p>Hands-on guidance for deploying agents, processes, and governance frameworks</p>
+                        </div>
+
+                        <div class="service-item">
+                            <h4>📊 Governance Design</h4>
+                            <p>Build ethical oversight, quality assurance, and risk management structures</p>
+                        </div>
+
+                        <div class="service-item">
+                            <h4>👥 Team Training</h4>
+                            <p>Workshops and training programs for human-AI collaboration best practices</p>
+                        </div>
+
+                        <div class="service-item">
+                            <h4>🎤 Speaking Engagements</h4>
+                            <p>Conference keynotes, corporate events, and industry panels on AI governance</p>
+                        </div>
+
+                        <div class="service-item">
+                            <h4>📝 Custom Research</h4>
+                            <p>Industry-specific adaptations and case study development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); padding: 2.5rem; border-radius: 10px; margin-top: 3rem;">
+                    <h3 style="color: #667eea; margin-bottom: 1rem; text-align: center;">Speaking & Media</h3>
+                    <p style="text-align: center; margin-bottom: 2rem;">Available for:</p>
+                    <ul style="max-width: 600px; margin: 0 auto; list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #667eea; font-weight: bold;">✓</span>
+                            Conference keynotes and panel discussions
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #667eea; font-weight: bold;">✓</span>
+                            Corporate workshops and training sessions
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #667eea; font-weight: bold;">✓</span>
+                            Podcast and interview appearances
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #667eea; font-weight: bold;">✓</span>
+                            Webinar presentations
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #667eea; font-weight: bold;">✓</span>
+                            Industry advisory board participation
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 3rem; padding: 2rem; background: #fff; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <h3 style="color: #667eea; margin-bottom: 1rem; text-align: center;">About Pavan Srinivas</h3>
+                    <p style="text-align: center; max-width: 700px; margin: 0 auto; color: #555;">
+                        AI Governance Expert with 19 years of experience in digital transformation and enterprise systems. Chief Digital Officer certified from Indian School of Business (97% score). Specializes in scaling AI operations while maintaining compliance and safety standards in regulated industries.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Organization?</h2>
+            <p>Let's discuss how the APF Framework can accelerate your AI adoption journey.</p>
+            <div class="cta-buttons">
+                <a href="mailto:dpavansrinivas@gmail.com?subject=APF Framework Consultation Request" class="btn btn-primary">Schedule Consultation</a>
+                <a href="resources.html" class="btn btn-secondary">Download Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 APF Framework by Pavan Srinivas. All rights reserved.</p>
+            <p>The views expressed are personal and do not reflect any current or former employer.</p>
+        </div>
+    </footer>
+</body>
+</html>

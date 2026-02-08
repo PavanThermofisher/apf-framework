@@ -390,6 +390,16 @@ footer p {
     .arrow {
         transform: rotate(90deg);
     }
+    
+    /* Comparison table responsive */
+    .framework-comparison table {
+        font-size: 0.85em;
+    }
+    
+    .framework-comparison th,
+    .framework-comparison td {
+        padding: 0.75rem !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -408,5 +418,41 @@ footer p {
     
     .btn {
         width: 100%;
+    }
+    
+    /* Stack table on very small screens */
+    .framework-comparison table,
+    .framework-comparison thead,
+    .framework-comparison tbody,
+    .framework-comparison th,
+    .framework-comparison td,
+    .framework-comparison tr {
+        display: block;
+    }
+    
+    .framework-comparison thead tr {
+        display: none;
+    }
+    
+    .framework-comparison tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        background: white;
+    }
+    
+    .framework-comparison td {
+        text-align: left;
+        padding: 0.5rem 0 !important;
+        border: none !important;
+    }
+    
+    .framework-comparison td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.25rem;
+        color: #667eea;
     }
 }
